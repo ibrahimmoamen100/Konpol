@@ -11,7 +11,6 @@ import Topnavbar from "@/components/Topnavbar";
 export default function Home() {
   return (
     <div>
-
       <Topnavbar />
       <Navbar /> 
       
