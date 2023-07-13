@@ -7,23 +7,11 @@ import { useEffect, useState } from "react";
 import { BsArrowRight } from "react-icons/bs";
 import { GiEarthAmerica } from "react-icons/gi";
 
-import SmallDrop from "./SmallDrop";
 
 function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
 
-  const { line1, line2, line3 } = useSpring({
-    line1: isOpen
-      ? "rotate(45deg) translate(2px, 2px)"
-      : "rotate(0deg) translate(0px, 0px)",
-    line2: isOpen ? 0 : 1,
-    line3: isOpen
-      ? "rotate(-45deg) translate(9px, -11px)"
-      : "rotate(0deg) translate(0px, 0px)",
 
-    config: { duration: 200 },
-  });
 
   const navScroll = useSpring({
     top: isSticky ? 0 : -30,
@@ -47,9 +35,7 @@ function Navbar() {
   }, []);
 
 
-  const handleClick = () => {
-    setIsOpen(!isOpen);
-  };
+
   return (
     <animated.div style={navScroll} className={isSticky ? 'fixed left-0 bg-base-100 m-auto w-full z-10 shadow-md' : ''}>
       <div className=" navbar bg-base-100 container m-auto w-full">
@@ -73,21 +59,9 @@ function Navbar() {
             </span>
           </div>
           <div
-            onClick={handleClick}
             className="lg:hidden flex flex-col justify-between h-5 w-6 cursor-pointer items-end"
           >
-            <animated.div
-              style={{ transform: line1 }}
-              className="line bg-gray-600 w-full h-[2px]"
-            />
-            <animated.div
-              style={{ opacity: line2 }}
-              className="line bg-gray-600 w-full h-[2px]"
-            />
-            <animated.div
-              style={{ transform: line3 }}
-              className="line bg-gray-600 w-full h-[2px]"
-            />
+
           </div>
           <div className="hidden lg:flex justify-end items-end gap-4">
             <button className="border-2 text-main border-main p-2 flex justify-center items-center gap-2">
@@ -99,7 +73,6 @@ function Navbar() {
           </div>
         </div>
       </div>
-      {isOpen && <SmallDrop />}
     </animated.div>
   );
 }
