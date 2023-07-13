@@ -24,7 +24,6 @@ export default function Card() {
           width='600'
           height='600'
           alt=""
-          cloudName="dbiydbxwa"
 
           className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center opacity-40"
         />

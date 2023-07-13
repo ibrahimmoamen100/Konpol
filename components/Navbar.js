@@ -38,7 +38,7 @@ function Navbar() {
       } else {
         setIsSticky(false);
       }
-    };  
+    };
 
     window.addEventListener('scroll', handleScroll);
 
@@ -55,7 +55,15 @@ function Navbar() {
     <animated.div style={navScroll} className={isSticky ? 'fixed left-0 bg-base-100 m-auto w-full z-10 shadow-md' : ''}>
       <div className=" navbar bg-base-100 container m-auto w-full">
         <div className="flex mr-5">
-
+          <CldImage
+            width="80"
+            height="80"
+            src="v1689225354/logo_rz0olg.jpg"
+            sizes="(max-width: 768px) 100vw,
+          (max-width: 1200px) 50vw,
+          33vw"
+            alt="Description of my image"
+          />
         </div>
         {/* This Humberger Menu  */}
         <div className="flex flex-row justify-end w-full gap-20">
