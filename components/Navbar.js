@@ -4,13 +4,12 @@ import { CldImage } from "next-cloudinary";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { AiOutlineMenu } from "react-icons/ai";
 import { BsArrowRight } from "react-icons/bs";
 import { GiEarthAmerica } from "react-icons/gi";
 
 import SmallDrop from "./SmallDrop";
 
-function Navbar(props) {
+function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
 
@@ -57,7 +56,7 @@ function Navbar(props) {
         <div className="flex mr-5">
           <Link href="">
             <CldImage
-              width={isSticky?"80":'120'}
+              width={parseInt(isSticky?"80":'120')}
               height="120"
               border="2px_solid_darkblue"
               src="v1688261356/konpol_transparent_logo_lyk9ay.png"
