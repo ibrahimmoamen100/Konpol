@@ -54,13 +54,12 @@ function Navbar() {
     <animated.div style={navScroll} className={isSticky ? 'fixed left-0 bg-base-100 m-auto w-full z-10 shadow-md' : ''}>
       <div className=" navbar bg-base-100 container m-auto w-full">
         <div className="flex mr-5">
+          <Link href="">
             <CldImage
               width={isSticky?"80":'120'}
-              border="2px_solid_darkblue"
               src="v1688261356/konpol_transparent_logo_lyk9ay.png"
-              sizes="100vw"
-              alt="Description of my image"
             />
+          </Link>
         </div>
         {/* This Humberger Menu  */}
         <div className="flex flex-row justify-end w-full gap-20">
