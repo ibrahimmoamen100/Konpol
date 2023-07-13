@@ -60,7 +60,6 @@ function Navbar() {
               width={isSticky?"80":'120'}
               height="120"
               border="2px_solid_darkblue"
-              cloudName="dqy483lw0"
               src="v1689225351/konpol_transparent_logo_tor4ja.png"
               sizes="100vw"
               alt="Description of my image"
