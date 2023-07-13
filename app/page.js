@@ -10,7 +10,6 @@ export default function page() {
     <div>
       <Topnavbar />
       <Navbar /> 
-      
       <BottomNavbar/>
       <CounterPage/>
       <div className="bg-zinc-100">
