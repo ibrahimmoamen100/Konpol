@@ -4,6 +4,7 @@ import { CldImage } from "next-cloudinary";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { AiOutlineMenu } from "react-icons/ai";
 import { BsArrowRight } from "react-icons/bs";
 import { GiEarthAmerica } from "react-icons/gi";
 
@@ -57,8 +58,13 @@ function Navbar() {
           <Link href="">
             <CldImage
               width={isSticky?"80":'120'}
-              src="v1688261356/konpol_transparent_logo_lyk9ay.png"
-            />
+              height="120"
+              border="2px_solid_darkblue"
+              cloudName="dqy483lw0"
+              src="v1689225351/konpol_transparent_logo_tor4ja.png"
+              sizes="100vw"
+              alt="Description of my image"
+            />{" "}
           </Link>
         </div>
         {/* This Humberger Menu  */}
