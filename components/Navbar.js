@@ -11,7 +11,7 @@ import { GiEarthAmerica } from "react-icons/gi";
 
 import SmallDrop from "./SmallDrop";
 
-function Navbar(props) {
+function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
 
