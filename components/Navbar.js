@@ -9,9 +9,10 @@ import { AiOutlineMenu } from "react-icons/ai";
 import { BsArrowRight } from "react-icons/bs";
 import { GiEarthAmerica } from "react-icons/gi";
 
+import { useMeasure } from "@uidotdev/usehooks";
 import SmallDrop from "./SmallDrop";
 
-function Navbar() {
+function Navbar(props) {
   const [isOpen, setIsOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
 
@@ -48,6 +49,7 @@ function Navbar() {
     };
   }, []);
 
+  const [refSolution, boundsSolution] = useMeasure();
 
   const handleClick = () => {
     setIsOpen(!isOpen);
@@ -58,7 +60,7 @@ function Navbar() {
         <div className="flex mr-5">
           <Link href="home">
             <CldImage
-              width={parseInt(isSticky?"80":'120')}
+              width={isSticky?"80":'120'}
               height="120"
               border="2px_solid_darkblue"
               cloudName="dbiydbxwa"
