@@ -1,3 +1,4 @@
+'use client'
 import { animated, useSpring } from "@react-spring/web";
 import { useMeasure } from "@uidotdev/usehooks";
 import Link from "next/link";

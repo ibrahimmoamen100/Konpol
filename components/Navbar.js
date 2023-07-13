@@ -9,7 +9,6 @@ import { AiOutlineMenu } from "react-icons/ai";
 import { BsArrowRight } from "react-icons/bs";
 import { GiEarthAmerica } from "react-icons/gi";
 
-import { useMeasure } from "@uidotdev/usehooks";
 import SmallDrop from "./SmallDrop";
 
 function Navbar(props) {
@@ -49,7 +48,6 @@ function Navbar(props) {
     };
   }, []);
 
-  const [refSolution, boundsSolution] = useMeasure();
 
   const handleClick = () => {
     setIsOpen(!isOpen);

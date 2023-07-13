@@ -1,4 +1,4 @@
-
+'use client'
 import { animated, useSpring } from "@react-spring/web";
 import Link from "next/link";
 import React from "react";
