@@ -17,17 +17,17 @@ function Topnavbar() {
         </div>
         <ul className="flex flex-row gap-2 w-full justify-end">
           <li className="flex justify-center items-center">
-          <Link href="" className="text-2xl text-main  hover:text-blue-700">
+          <Link href="/" className="text-2xl text-main  hover:text-blue-700">
               <AiFillFacebook className="text-3xl text-white  hover:text-gray" />
             </Link>
           </li>
           <li>
-            <Link href="" className="text-2xl text-main  hover:text-blue-700">
+            <Link href="/" className="text-2xl text-main  hover:text-blue-700">
               <AiFillTwitterSquare className="text-3xl text-white  hover:text-gray"/>
             </Link>
           </li>
           <li className="">
-          <Link href="" className="text-2xl text-main  hover:text-blue-700">
+          <Link href="/" className="text-2xl text-main  hover:text-blue-700">
               <AiFillLinkedin className="text-3xl text-white  hover:text-gray"/>
             </Link>
           </li>

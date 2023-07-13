@@ -8,7 +8,7 @@ import Navbar from "@/components/Navbar";
 // import Slider from "@/components/Slider";
 import Stats from "@/components/Stats";
 import Topnavbar from "@/components/Topnavbar";
-export default function Home() {
+export default function page() {
   return (
     <div>
       <Topnavbar />

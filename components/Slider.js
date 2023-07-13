@@ -83,6 +83,8 @@ function Slider(props) {
             src="v1688261354/slider_4_dficvu.jpg"
             sizes="100vw"
             alt="Description of my image"
+            cloudName="dbiydbxwa"
+
 
           />
         </div>
@@ -94,6 +96,8 @@ function Slider(props) {
             crop="fill"
             src="v1688261354/slider_2_ny6eo5.jpg"
             sizes="100vw"
+            cloudName="dbiydbxwa"
+
             alt="Description of my image"
           />
         </div>
@@ -107,6 +111,8 @@ function Slider(props) {
             src="v1688261354/slider_3_rrgdtd.jpg"
             sizes="100vw"
             alt="Description of my image"
+            cloudName="dbiydbxwa"
+
             zoom="0"
           />
         </div>

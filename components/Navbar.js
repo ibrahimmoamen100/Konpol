@@ -60,10 +60,10 @@ function Navbar(props) {
         <div className="flex mr-5">
           <Link href="home">
             <CldImage
-              width={isSticky?"80":'120'}
+              width={parseInt(isSticky?"80":'120')}
               height="120"
               border="2px_solid_darkblue"
-
+              cloudName="dbiydbxwa"
               src="v1688261356/konpol_transparent_logo_lyk9ay.png"
               sizes="100vw"
               alt="Description of my image"
