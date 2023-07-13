@@ -3,13 +3,11 @@ import { animated, useSpring } from "@react-spring/web";
 import { CldImage } from "next-cloudinary";
 import Image from "next/image";
 import Link from "next/link";
-
 import { useEffect, useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { BsArrowRight } from "react-icons/bs";
 import { GiEarthAmerica } from "react-icons/gi";
 
-import { useMeasure } from "@uidotdev/usehooks";
 import SmallDrop from "./SmallDrop";
 
 function Navbar(props) {
@@ -49,7 +47,6 @@ function Navbar(props) {
     };
   }, []);
 
-  const [refSolution, boundsSolution] = useMeasure();
 
   const handleClick = () => {
     setIsOpen(!isOpen);
@@ -58,12 +55,11 @@ function Navbar(props) {
     <animated.div style={navScroll} className={isSticky ? 'fixed left-0 bg-base-100 m-auto w-full z-10 shadow-md' : ''}>
       <div className=" navbar bg-base-100 container m-auto w-full">
         <div className="flex mr-5">
-          <Link href="home">
+          <Link href="">
             <CldImage
               width={isSticky?"80":'120'}
               height="120"
               border="2px_solid_darkblue"
-              cloudName="dbiydbxwa"
               src="v1688261356/konpol_transparent_logo_lyk9ay.png"
               sizes="100vw"
               alt="Description of my image"
