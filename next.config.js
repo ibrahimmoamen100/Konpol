@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {  cloudName: "dbiydbxwa",
+const nextConfig = { 
 }
 
 module.exports = nextConfig
