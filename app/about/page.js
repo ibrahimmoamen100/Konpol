@@ -1,9 +1,11 @@
 import React from 'react'
 
-function page() {
+function about() {
   return (
-    <div>about</div>
+    <div>
+    hello from about section
+    </div>
   )
 }
 
-export default page
+export default about

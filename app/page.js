@@ -1,28 +1,25 @@
-
-import BottomNavbar from "@/components/BottomNavbar";
+"use client";
 import Card from "@/components/Card";
+import Contact from "@/components/Contact";
 import CounterPage from "@/components/CounterPage";
-import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
+import Map from "@/components/Map";
+import MapLocation from "@/components/MapLocation";
+import ProductCard from "@/components/ProductCard";
 // import ProductCard from "@/components/ProductCard";
-// import Slider from "@/components/Slider";
 import Stats from "@/components/Stats";
-import Topnavbar from "@/components/Topnavbar";
+import SwiperSlider from "@/components/SwiperSlider";
+import Script from "next/script";
 export default function Home() {
   return (
     <div>
-      <Topnavbar />
-      <Navbar /> 
-      
-      <BottomNavbar/>
-      <CounterPage/>
-      {/* <Slider /> */}
-      <div className="bg-zinc-100">
-
+      {/* <CounterPage /> */}
+      <SwiperSlider />
+      <div className="products bg-zinc-100">
+        <ProductCard imageSrc="" title="" description="" />
       </div>
-      {/* <Card/> */}
-      <Stats/>
-      <Footer /> 
+      <Stats />
+      {/* <MapLocation/> */}
+      <Map />
     </div>
   );
 }

@@ -40,30 +40,36 @@ function Navbar() {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
 
   const handleClick = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <animated.div style={navScroll} className={isSticky ? 'fixed left-0 bg-base-100 m-auto w-full z-10 shadow-md' : ''}>
+    <animated.div
+      style={navScroll}
+      className={
+        isSticky ? "fixed left-0 bg-base-100 m-auto w-full z-10 shadow-md" : ""
+      }
+    >
       <div className=" navbar bg-base-100 container m-auto w-full">
         <div className="flex mr-5">
-          <CldImage
-            width="80"
-            height="80"
-            src="v1689225354/logo_rz0olg.jpg"
-            sizes="(max-width: 768px) 100vw,
+          <Link href="/">
+            <CldImage
+              width={isSticky ? 80 : 120}
+              height="80"
+              src="v1689225354/logo_rz0olg.jpg"
+              sizes="(max-width: 768px) 100vw,
           (max-width: 1200px) 50vw,
           33vw"
-            alt="Description of my image"
-          />
+              alt="Description of my image"
+            />
+          </Link>
         </div>
         {/* This Humberger Menu  */}
         <div className="flex flex-row justify-end w-full gap-20">
@@ -90,12 +96,24 @@ function Navbar() {
             />
           </div>
           <div className="hidden lg:flex justify-end items-end gap-4">
-            <button className="border-2 text-main border-main p-2 flex justify-center items-center gap-2">
+            <Link
+              href="location"
+              className="border-2 text-main border-main p-2 flex justify-center items-center gap-2"
+            >
               Our Locations <GiEarthAmerica />
-            </button>
-            <button className="border-2 border-secondMain text-secondMain p-2 flex justify-center items-center gap-2">
+            </Link>
+            <Link
+              href="contact"
+              className="border-2 border-secondMain text-secondMain p-2 flex justify-center items-center gap-2"
+            >
+              Our Cataloge <BsArrowRight />
+            </Link>
+            <Link
+              href="contact"
+              className="border-2 border-secondMain text-secondMain p-2 flex justify-center items-center gap-2"
+            >
               Contact Us <BsArrowRight />
-            </button>
+            </Link>
           </div>
         </div>
       </div>

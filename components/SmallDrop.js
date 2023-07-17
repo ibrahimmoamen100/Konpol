@@ -71,13 +71,16 @@ export default function SmallDrop() {
           </Link>
         </ul>
       </div>
-      <div className="flex justify-end items-end gap-4">
-            <button className="border-2 text-main border-main p-3 flex justify-center items-center gap-2">
+      <div className="flex flex-wrap justify-center items-end gap-4 ">
+            <Link href='location' className="border-2 text-main border-main p-3 flex justify-center items-center gap-2">
               Our Locations <GiEarthAmerica />
-            </button>
-            <button className="border-2 border-secondMain text-secondMain p-3 flex justify-center items-center gap-2">
+            </Link>
+            <Link  href='location' className="border-2 border-secondMain text-secondMain p-3 flex justify-center items-center gap-2">
+              Our Cataloge  <BsArrowRight />
+            </Link>
+            <Link  href='location' className="border-2 border-secondMain text-secondMain p-3 flex justify-center items-center gap-2">
               Contact Us <BsArrowRight />
-            </button>
+            </Link>
           </div>
     </animated.div>
   );
