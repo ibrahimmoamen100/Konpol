@@ -14,7 +14,7 @@ function SwiperSlider() {
   return (
     <div>
       <Swiper
-        className="w-full h-[50vh]"
+        className="w-full h-auto"
         // install Swiper modules
         modules={[Navigation, Pagination, A11y]}
         navigation
@@ -26,9 +26,10 @@ function SwiperSlider() {
         <SwiperSlide className="bg-red">
           <CldImage
             width={3000}
-            height={1000}
+            height={1080}
             alt="Description of my image"
-            crop="fill"
+            className="absolute"
+            crop="thumb"
             src="v1689225374/bg2_csqnjt.jpg"
             gravity="faces"
             overlays={[
@@ -37,17 +38,17 @@ function SwiperSlider() {
                 crop: "fit",
                 position: {
                   x: 50,
-                  y: 50,
+                  y: 100,
                   gravity: "north_west",
                 },
                 text: {
                   color: "skyblue",
-                  fontFamily: "roboto",
-                  fontSize: 160,
+                  fontFamily: "Righteous",
+                  fontSize: 100,
                   fontWeight: "bold",
                   // textDecoration: 'underline',
                   letterSpacing: 8,
-                  text: "KONPOL",
+                  text: "Solution Providers ",
                 },
               },
               {
@@ -59,33 +60,77 @@ function SwiperSlider() {
                   gravity: "north_west",
                 },
                 text: {
-                  color: "skyblue",
-                  fontFamily: "Source Sans Pro",
-                  fontSize: 70,
+                  color: "#ddd",
+                  fontFamily: "Orbitron",
+                  fontSize: 40,
+                  backgroundColor: "white",
+                  padding: "5px",
                   fontWeight: "bold",
-                  textDecoration: "underline",
-                  letterSpacing: 14,
-                  text: "Solution Providers ",
+                  // textDecoration: "underline",
+                  letterSpacing: 4,
+                  text: "Learn More About Us by Download Our Cataloge ",
                 },
               },
             ]}
             zoom="0.5"
           />
-          <button className="text-4xl z-10 text-primary">
+        </SwiperSlide>
+        <SwiperSlide className="bg-orange-800 relative">
+          {" "}
+          <CldImage
+            width={3000}
+            height={1080}
+            alt="Description of my image"
+            crop="thumb"
+            src="v1689225371/82c2bbc2-80b4-4eaa-a075-fe0a15ae778e_p2qgkp.jpg"
+            gravity="faces"
+            overlays={[
+              {
+                width: 2670 - 800,
+                crop: "fit",
+                position: {
+                  x: 50,
+                  y: 100,
+                  gravity: "north_west",
+                },
+                text: {
+                  color: "#00154e",
+                  fontFamily: "Righteous",
+                  fontSize: 100,
+                  fontWeight: "bold",
+                  // textDecoration: 'underline',
+                  letterSpacing: 8,
+                  text: "Solution Providers ",
+                },
+              },
+              {
+                width: 2670 - 800,
+                crop: "fit",
+                position: {
+                  x: 50,
+                  y: 200,
+                  gravity: "north_west",
+                },
+                text: {
+                  color: "#df9b0b",
+                  fontFamily: "Orbitron",
+                  fontSize: 40,
+                  backgroundColor: "white",
+                  padding: "5px",
+                  fontWeight: "bold",
+                  // textDecoration: "underline",
+                  letterSpacing: 4,
+                  text: "Learn More About Us by Download Our Cataloge ",
+                },
+              },
+            ]}
+            zoom="0.5"
+          />
+          <button className="relative bg-slate-100 font-roboto p-2  bottom-20 left-10 z-10">
             {" "}
-            Learn More about us{" "}
+            Download Our Cataloge
           </button>
         </SwiperSlide>
-        <SwiperSlide className="bg-orange-800">
-          Slide 2{" "}
-          <button className="text-4xl z-10 text-primary">
-            {" "}
-            Learn More about us{" "}
-          </button>
-        </SwiperSlide>
-        <SwiperSlide className="bg-sky-600">Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        ...
       </Swiper>
     </div>
   );

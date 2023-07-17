@@ -20,11 +20,10 @@ export default function Card() {
     <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
       <section className="">
         <CldImage
-          src='v1688261354/slider_4_dficvu.jpg'
-          width='600'
-          height='600'
-          alt=""
-
+          src="v1688261354/slider_4_dficvu.jpg"
+          width="600"
+          height="600"
+          alt="this image"
           className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center opacity-40"
         />
         <svg
