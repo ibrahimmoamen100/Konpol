@@ -126,7 +126,7 @@ function SwiperSlider() {
             ]}
             zoom="0.5"
           />
-          <button className="relative bg-slate-100 font-roboto p-2  bottom-20 left-10 z-10">
+          <button className="relative bg-slate-100 font-roboto p-2   bottom-20 left-10 z-10">
             {" "}
             Download Our Cataloge
           </button>

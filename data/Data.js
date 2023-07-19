@@ -13,13 +13,11 @@ export let materials = [
   { id: 12, name: "my contact", link: "/contact" },
 ];
 
-
 export let products = [
   { id: 1, name: "mY Product", link: "/home" },
   { id: 2, name: "my product 2", link: "/about" },
   { id: 3, name: "my product 3", link: "/contact" },
 ];
-
 
 export let markets = [
   { id: 1, name: "my market 1 ", link: "/home" },
@@ -36,4 +34,27 @@ export let resources = [
   { id: 1, name: "my resources 1", link: "/home" },
   { id: 2, name: "my resources 2 ", link: "/about" },
   { id: 3, name: "my resources 3", link: "/contact" },
+];
+
+export let productss = [
+  {
+    id: 1,
+    title: "Chair",
+    description: "this is products from konpol company",
+  },
+  {
+    id: 2,
+    title: "Tables",
+    description: "this is products from konpol company",
+  },
+  {
+    id: 3,
+    title: "Computers",
+    description: "this is products from konpol company",
+  },
+  {
+    id: 4,
+    title: "Office",
+    description: "this is products from konpol company",
+  },
 ];
