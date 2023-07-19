@@ -4,7 +4,7 @@ import React from "react";
 function products() {
   return (
     <div className="container m-auto p-4 flex flex-wrap gap-4">
-      <ProductCard
+      {/* <ProductCard
         imageSrc="v1689682249/tools_1_vh8zdt.jpg"
         title="Tools 1 "
         description="this tools one for konpol company"
@@ -53,7 +53,7 @@ function products() {
         imageSrc="v1689682248/kind_of_wood_ze5q4i.jpg"
         title="Air Condition"
         description="this Air Condition  for konpol company"
-      />
+      /> */}
     </div>
   );
 }
