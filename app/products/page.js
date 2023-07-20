@@ -1,7 +1,7 @@
 import ProductCard from "@/components/ProductCard";
 import React from "react";
 
-function products() {
+function page() {
   return (
     <div className="container m-auto p-4 flex flex-wrap gap-4">
       {/* <ProductCard
@@ -58,4 +58,4 @@ function products() {
   );
 }
 
-export default products;
+export default page;
